@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/appBackgroundColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    tools:context=".Activity.LeaveDetailActivity">
+    <LinearLayout
+        android:background="@color/appColorPrimary"
+        android:orientation="horizontal"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+        <LinearLayout
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Xin nghỉ phép"/>
+                <TextView
+                    android:drawableLeft="@drawable/ic_loading_white"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chưa duyệt"/>
+            </RelativeLayout>
+
+            <TextView
+                android:padding="4dp"
+                android:background="@drawable/border_frame_while_background_green_border"
+                android:textColor="@color/appColorPrimary"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nghỉ phép năm"/>
+            <TextView
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/tv_profile_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 ngày | Chiều 24 - Sáng 26/04/2019"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView
+        android:layout_weight="6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:orientation="vertical"
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:padding="15dp"
+                android:background="@drawable/border_frame_while_background_no_border"
+                android:layout_margin="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lí do"/>
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum posuere convallis quis urna conubia semper hendrerit ipsum, morbi vestibulum turpis purus id netus at ultricies, faucibus suspendisse donec fusce condimentum vitae malesuada commodo.
+Tempus dictum porta praesent turpis proin nec purus venenatis, neque consequat augue malesuada nullam vestibulum porta, quisque nam feugiat tempor ut nisi vestibulum tellus per platea est tempus vestibulum tellus euismod."
+                    />
+                <View
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/appBackgroundColor"
+                    />
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hình ảnh"/>
+                <ImageView
+                    android:src="@drawable/sample_leave_image"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <Button
+            android:textColor="#ffffff"
+            android:background="@drawable/border_frame_green_background_green_border"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hủy đơn"/>
+    </LinearLayout>
+
+</LinearLayout>

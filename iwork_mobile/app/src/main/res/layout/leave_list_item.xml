@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="10">
+    <LinearLayout
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:layout_weight="1.7"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:textColor="@color/appColorPrimary"
+            android:id="@+id/tv_leave_item_date_in_leave"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3"/>
+        <TextView
+            android:gravity="center"
+            android:text="ngày"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginLeft="2dp"
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        android:layout_weight="8.3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/border_textview_radius_white_background"
+            android:id="@+id/tv_leave_item_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nghỉ phép năm"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tv_leave_item_type"
+            android:text="04/04/2018"
+            android:id="@+id/tv_leave_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/appColorWarning"
+            android:id="@+id/tv_leave_item_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chưa duyệt"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+</LinearLayout>
