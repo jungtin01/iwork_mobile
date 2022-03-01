@@ -10,19 +10,24 @@ public class DataReport implements Serializable {
     @SerializedName("username")
     @Expose
     private String username;
-    @SerializedName("mac_address")
+//    @SerializedName("mac_address")
+    @SerializedName("macAddress")
     @Expose
     private String macAddress;
-    @SerializedName("day_work")
+//    @SerializedName("day_work")
+    @SerializedName("dateWork")
     @Expose
     private String dayWork;
-    @SerializedName("time_work")
+    //@SerializedName("time_work")
+    @SerializedName("timeWork")
     @Expose
     private String timeWork;
-    @SerializedName("time_retirement")
+    //@SerializedName("time_retirement")
+    @SerializedName("timeRetirement")
     @Expose
     private String timeRetirement;
-    @SerializedName("start_time_work")
+    //@SerializedName("start_time_work")
+    @SerializedName("startTimeWork")
     @Expose
     private String startTimeWork;
 

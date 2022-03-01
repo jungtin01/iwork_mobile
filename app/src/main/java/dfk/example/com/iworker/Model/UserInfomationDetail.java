@@ -11,10 +11,12 @@ public class UserInfomationDetail {
     @SerializedName("title_name")
     @Expose
     private String titleName;
-    @SerializedName("first_name")
+    //@SerializedName("first_name")
+    @SerializedName("firstName")
     @Expose
     private String firstName;
-    @SerializedName("last_name")
+    //@SerializedName("last_name")
+    @SerializedName("lastName")
     @Expose
     private String lastName;
     @SerializedName("sex")
