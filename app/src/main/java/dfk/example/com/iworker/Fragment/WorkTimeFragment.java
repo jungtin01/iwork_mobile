@@ -585,8 +585,8 @@ public class WorkTimeFragment extends Fragment {
                     //SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEE dd/MM/yyyy");
                     //String formatted = simpleDateFormat.format(checkDate);
                     String checkTimeWork = loadFirstReportList.get(i).getTimeWork();
-                    float hour = Integer.parseInt(checkTimeWork.substring(0, 2));
-                    float min = Integer.parseInt(checkTimeWork.substring(3, 5));
+                    float hour = Integer.parseInt(checkTimeWork.substring(0, 1));
+                    float min = Integer.parseInt(checkTimeWork.substring(0, 1));
                     float timePerDay = hour + (min / 60);
                     switch (dayOfWeek) {
                         case 2:
